@@ -15,7 +15,7 @@
 #define SYM 2
 #define NAV 3
 
-#include "combos.dtsi"
+// #include "combos.dtsi"
 
 // Behavior configuration
 &mt {
@@ -167,5 +167,4 @@
             >;
         };
     };
-
 };
