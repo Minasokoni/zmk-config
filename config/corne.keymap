@@ -15,6 +15,12 @@
 #define SYM 2
 #define FUN 3
 
+// Desktop and tab navigation shortcuts
+#define D_LT   LC(LG(LEFT))
+#define D_RT   LC(LG(RIGHT))
+#define TAB_RT LC(TAB)
+#define TAB_LT LC(LS(TAB))
+
 #include "combos.dtsi"
 
 // Behavior configuration
