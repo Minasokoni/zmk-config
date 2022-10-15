@@ -36,7 +36,7 @@
     chosen {
         zmk,matrix_transform = &five_column_transform;
     };
-    
+
     behaviors {
         am: alpha_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -105,9 +105,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
- &trans         &kp Q       &kp W       &kp E         &kp R      &kp T                     &kp Y   &kp U          &kp I    &kp O             &kp P  &trans
- &trans   &am LCTRL A  &am LALT S  &am LGUI D  &as LSHIFT F      &kp G                     &kp H   &kp J          &kp K    &kp L  &kp SINGLE_QUOTE  &trans
- &trans  &as LSHIFT Z       &kp X       &kp C         &kp V      &kp B                     &kp N   &kp M      &kp COMMA  &kp DOT          &kp FSLH  &trans
+ &kp Q       &kp W       &kp E         &kp R      &kp T                     &kp Y   &kp U          &kp I    &kp O             &kp P
+ &am LCTRL A  &am LALT S  &am LGUI D  &as LSHIFT F      &kp G                     &kp H   &kp J          &kp K    &kp L  &kp SINGLE_QUOTE
+ &as LSHIFT Z       &kp X       &kp C         &kp V      &kp B                     &kp N   &kp M      &kp COMMA  &kp DOT          &kp FSLH
                                      &kp LGUI         &mo 1  &kp SPACE          &am RSHIFT ENTER   &mo 2  &kp BACKSPACE
             >;
         };
@@ -120,9 +120,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans        &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6    &kp N7         &kp N8     &kp N9  &kp N0  &trans
- &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &kp LEFT  &kp DOWN         &kp UP  &kp RIGHT  &trans  &trans
- &trans    &bt BT_CLR        &trans        &trans        &trans        &trans            &trans    &trans         &trans     &trans  &trans  &trans
+         &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &kp N6    &kp N7         &kp N8     &kp N9  &kp N0
+   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &kp LEFT  &kp DOWN         &kp UP  &kp RIGHT  &trans
+     &bt BT_CLR        &trans        &trans        &trans        &trans            &trans    &trans         &trans     &trans  &trans
                                          &kp LGUI        &trans     &kp SPACE           &kp RET    &trans  &kp BACKSPACE
             >;
         };
@@ -135,18 +135,18 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
- &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
- &trans    &trans  &trans    &trans    &trans     &trans          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH  &trans
- &trans    &trans  &trans    &trans    &trans     &trans          &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE  &trans
+   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT          &kp CARET   &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR
+     &trans  &trans    &trans    &trans     &trans          &kp MINUS  &kp EQUAL         &kp LBKT  &kp RBKT  &kp BSLH
+     &trans  &trans    &trans    &trans     &trans          &kp UNDER   &kp PLUS         &kp LBRC  &kp RBRC  &kp PIPE
                            &kp LGUI    &trans  &kp SPACE            &kp RET     &trans    &kp BACKSPACE
             >;
         };
 
         FUN {
             bindings = <
- &trans   &kp F1   &kp F2  &kp F3  &kp F4   &kp F5          &trans  &trans  &trans  &trans  &trans  &trans
- &trans   &kp F6   &kp F7  &kp F8  &kp F9  &kp F10          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &kp F11  &kp F12  &trans  &trans   &trans          &trans  &trans  &trans  &trans  &trans  &trans
+    &kp F1   &kp F2  &kp F3  &kp F4   &kp F5          &trans  &trans  &trans  &trans  &trans
+    &kp F6   &kp F7  &kp F8  &kp F9  &kp F10          &trans  &trans  &trans  &trans  &trans
+   &kp F11  &kp F12  &trans  &trans   &trans          &trans  &trans  &trans  &trans  &trans
                            &trans  &trans   &trans          &trans  &trans  &trans
             >;
         };
