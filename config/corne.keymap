@@ -75,7 +75,7 @@
         compatible = "zmk,conditional-layers";
         // Define FUN layer as tri-state
         func_tristate {
-            if-layers = <NAV SYM>;
+            if-layers = <NUM SYM>;
             then-layer = <FUN>;
         };
     };
