@@ -6,7 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>// Behavior configuration
+#include <dt-bindings/zmk/bt.h>
+
 &mt {
     tapping-term-ms = <200>;
     quick_tap_ms = <0>;
@@ -60,16 +61,29 @@
         semi {
             bindings = <&kp SEMI>;
             key-positions = <22 23>;
+            timeout-ms = <40>;
+            layers = <0>;
         };
 
         tilde {
             bindings = <&kp TILDE>;
             key-positions = <34 35>;
+            timeout-ms = <40>;
+            layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
+            timeout-ms = <40>;
+            layers = <0>;
+        };
+
+        new_combo {
+            bindings = <&kp ESC>;
+            key-positions = <40 41>;
+            timeout-ms = <40>;
+            layers = <0 1 2 3>;
         };
     };
 
