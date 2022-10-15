@@ -69,6 +69,16 @@
           ╰────────────╯ ╰────────────╯            */
 
 
+    combos {
+        compatible = "zmk,combos";
+
+        semi {
+            bindings = <&kp SEMI>;
+            key-positions = <18 19>;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
