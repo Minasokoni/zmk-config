@@ -41,6 +41,7 @@
     };
 
     behaviors {
+
         am: alpha_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "ALPHA_MT";
@@ -50,6 +51,7 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
         as: alpha_shift {
             compatible = "zmk,behavior-hold-tap";
             label = "ALPHA_SFT";
@@ -62,9 +64,9 @@
 
         tde: tap_dance_esc {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE";
+            label = "TAP_DANCE_ESC";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp Q>, <&kp ESC>;
         };
     };
