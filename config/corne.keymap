@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_ESC";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp Q>, <&kp ESC>;
         };
 
@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_SEMI";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp SINGLE_QUOTE>, <&kp SEMI>;
         };
     };
