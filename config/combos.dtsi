@@ -19,7 +19,7 @@
     combos {
         compatible = "zmk,combos";
         COMBO(semi, &kp TAB, 0  1, DEF, 40)
-        COMBO(func_layer, &to 3, 30  31, DEF, 40)
+        COMBO(func_layer, &mo 3, 30  31, DEF, 40)
 
     };
 };
